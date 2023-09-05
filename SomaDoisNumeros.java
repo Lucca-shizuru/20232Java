@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import javax.swing.JOptionpane;
 //pacote padrão: java.lang: importado automaticamente
 public class SomaDoisNumeros{
     public static void main(String [] args) {
@@ -9,13 +9,14 @@ public class SomaDoisNumeros{
        double resultado;
     
        //entrada 
-       System.out.println("Digite o primeiro operando");
-       primeiroOperando = leitor.nextDouble();
+       primeiroOperando = Double.parseDouble(JOptionpane.showinputdialog
+       ("digite o primeiro operando"));
        System.out.println("Digite o segundo operando");
-       segundoOperando = leitor.nextDouble();
+       segundoOperando = Double.perseDouble(JOptionpane.showinputdialog ("digite o segundo opernado"));
        //processamento
        resultado = primeiroOperando + segundoOperando;
        //saída
-       System.out.println (resultado);
-    }  
+       JOptionpane.showMessageDialog(null. resultado);
+          
+   }  
 }
